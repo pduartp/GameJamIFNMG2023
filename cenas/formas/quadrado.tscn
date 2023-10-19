@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://yk8gvylbtg7b"]
+
+[ext_resource type="Texture2D" uid="uid://blx2es6oypabm" path="res://sprites/formas/pixil-frame-0 (1).png" id="1_a1igk"]
+
+[node name="quadrado" type="RigidBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(10, 10)
+polygon = PackedVector2Array(-11, -11, -11, 11, 11, 11, 11, -11)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, -8)
+scale = Vector2(4.24, 4.56)
+texture = ExtResource("1_a1igk")

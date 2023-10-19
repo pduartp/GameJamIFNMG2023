@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxibnjh86ion0"]
+
+[ext_resource type="Texture2D" uid="uid://bo56a6j1b5dxs" path="res://sprites/pixil-frame-0 (2).png" id="1_2fb85"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vvgo"]
+size = Vector2(152, 112)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty47g"]
+size = Vector2(144, 120)
+
+[node name="piso" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8vvgo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -28)
+scale = Vector2(2.4, 2.32)
+texture = ExtResource("1_2fb85")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(1, 0.345098, 1, 1)
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_ty47g")

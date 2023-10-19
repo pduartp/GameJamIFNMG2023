@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://6n6kdfmb6tnv"]
+
+[ext_resource type="PackedScene" uid="uid://c3woc04in8xsk" path="res://cenas/formas/triangle.tscn" id="1_r0ywh"]
+[ext_resource type="PackedScene" uid="uid://c8bod3unoe7jm" path="res://cenas/piso_2.tscn" id="2_auj6k"]
+[ext_resource type="Texture2D" uid="uid://b3r2lbtws1hy4" path="res://sprites/pixil-frame-0 (3).png" id="3_5wnic"]
+
+[node name="cenario" type="Node2D"]
+
+[node name="triangle" parent="." instance=ExtResource("1_r0ywh")]
+position = Vector2(222, 245)
+
+[node name="piso2" parent="." instance=ExtResource("2_auj6k")]
+position = Vector2(-56, 650)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2(1000, 1000)
+texture = ExtResource("3_5wnic")
