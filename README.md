@@ -4,8 +4,8 @@
 
 O projeto foi desenvolvido na Game Jam de 2023 do instituto federal pelos seguintes integrantes:
 
--> João Duarte Colares (Responsável pela programação, game design e level design) 💻🎲🎮;
--> Patrick Duarte Pimenta (Responsável pela direção de arte (píxel art), roteiro & direção) 🖌️📃🎬;
+- João Duarte Colares (Responsável pela programação, game design e level design) 💻🎲🎮;
+- Patrick Duarte Pimenta (Responsável pela direção de arte (píxel art), roteiro & direção) 🖌️📃🎬
 
 ## Explicação
 
