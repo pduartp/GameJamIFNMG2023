@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://yk8gvylbtg7b"]
+
+[ext_resource type="Texture2D" uid="uid://dt0oo73f46ahf" path="res://sprites/formas/char-fotor-2023102002938.png" id="1_gt041"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7ukf"]
+size = Vector2(161, 160)
+
+[node name="quadrado" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.00001, 2.50001)
+scale = Vector2(4, 4.083)
+texture = ExtResource("1_gt041")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_i7ukf")

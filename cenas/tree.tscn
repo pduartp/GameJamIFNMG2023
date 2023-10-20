@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdvl7kt4jvo2o"]
+
+[ext_resource type="Texture2D" uid="uid://bsef4lxi1qri2" path="res://sprites/ArvoreFrutiferaAtualizada.png" id="1_c33ly"]
+
+[node name="tree" type="Node2D"]
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_c33ly")

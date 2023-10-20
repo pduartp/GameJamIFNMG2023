@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8bod3unoe7jm"]
+
+[ext_resource type="PackedScene" uid="uid://dxibnjh86ion0" path="res://cenas/piso.tscn" id="1_cggtd"]
+
+[node name="piso" type="Node2D"]
+position = Vector2(16, 11)
+
+[node name="piso" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(-8, -8)
+
+[node name="piso2" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(232, -8)
+
+[node name="piso3" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(472, -8)
+
+[node name="piso4" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(712, -7)
+
+[node name="piso5" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(952, -8)
+
+[node name="piso6" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(1192, -8)
+
+[node name="piso7" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(1432, -8)
+
+[node name="piso8" parent="." instance=ExtResource("1_cggtd")]
+position = Vector2(1672, -8)

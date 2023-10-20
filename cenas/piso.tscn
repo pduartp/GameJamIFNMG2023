@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxibnjh86ion0"]
+
+[ext_resource type="Texture2D" uid="uid://lravxqrf1rbe" path="res://sprites/bLocoGramaQuadrado.png" id="1_o3cye"]
+[ext_resource type="Script" path="res://scripts/Area2D.gd" id="2_qq8uj"]
+[ext_resource type="Script" path="res://scripts/Area2D2.gd" id="3_4i18r"]
+[ext_resource type="PackedScene" uid="uid://cbt3nnfdotmi2" path="res://cenas/sons/pancada.tscn" id="4_ak1ex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vvgo"]
+size = Vector2(94, 92)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty47g"]
+size = Vector2(43.4, 46.85)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0jtva"]
+size = Vector2(99.75, 101)
+
+[node name="piso" type="StaticBody2D"]
+z_index = 1
+scale = Vector2(2.5, 2.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_8vvgo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.4, 2.32)
+texture = ExtResource("1_o3cye")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, -1)
+scale = Vector2(2, 2)
+script = ExtResource("2_qq8uj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(1, 0.345098, 1, 1)
+visibility_layer = 8
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_ty47g")
+
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("3_4i18r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+modulate = Color(0.27451, 0.109804, 0.321569, 1)
+position = Vector2(0.125, -0.5)
+shape = SubResource("RectangleShape2D_0jtva")
+
+[node name="pancada" parent="Area2D2" instance=ExtResource("4_ak1ex")]
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

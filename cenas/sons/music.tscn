@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8wmktbca6o4f"]
+
+[ext_resource type="AudioStream" uid="uid://cagpbx8hl85wk" path="res://sounds/657753__matrixxx__talk-show-background-music-02.wav" id="1_31ph8"]
+
+[node name="music" type="AudioStreamPlayer"]
+stream = ExtResource("1_31ph8")
+volume_db = 4.0
+autoplay = true

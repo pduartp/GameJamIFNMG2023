@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://du2icbj6jn2gy"]
+
+[ext_resource type="AudioStream" uid="uid://cp1sne3yrdxe3" path="res://sounds/458258__matrixxx__retro-jump-01.wav" id="1_w2isn"]
+
+[node name="pulo" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_w2isn")
+volume_db = 0.1

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhcngfrtup426"]
+
+[ext_resource type="Texture2D" uid="uid://d3srls0n6e3s8" path="res://sprites/formas/char-fotor-2023102003038.png" id="1_6gc1y"]
+
+[node name="pentagon" type="RigidBody2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(0, -21, -21, -5, -13, 20, 12, 20, 20, -5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_6gc1y")

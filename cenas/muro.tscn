@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckgkggd8plexc"]
+
+[ext_resource type="PackedScene" uid="uid://dym13wt7srvse" path="res://cenas/bloco_grande.tscn" id="1_q4p7o"]
+
+[node name="muro" type="Node2D"]
+
+[node name="bloco_grande" parent="." instance=ExtResource("1_q4p7o")]
+
+[node name="bloco_grande2" parent="." instance=ExtResource("1_q4p7o")]
+position = Vector2(0, -696)
+
+[node name="bloco_grande3" parent="." instance=ExtResource("1_q4p7o")]
+position = Vector2(0, -1392)
+
+[node name="bloco_grande4" parent="." instance=ExtResource("1_q4p7o")]
+position = Vector2(0, -2088)

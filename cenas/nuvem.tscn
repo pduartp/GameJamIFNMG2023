@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://8kwfc5ahnejy"]
+
+[ext_resource type="Texture2D" uid="uid://xp1hb5enn4rm" path="res://sprites/Nuvem.png" id="1_vc5gm"]
+
+[node name="nuvem" type="Node2D"]
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("1_vc5gm")

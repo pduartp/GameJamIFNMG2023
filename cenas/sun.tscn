@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cokh8f1fo85yl"]
+
+[ext_resource type="Texture2D" uid="uid://c0ro1peyepxll" path="res://sprites/Sol.png" id="1_vecdh"]
+
+[node name="sun" type="Node2D"]
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vecdh")

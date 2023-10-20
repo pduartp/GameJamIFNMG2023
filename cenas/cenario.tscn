@@ -1,0 +1,679 @@
+[gd_scene load_steps=12 format=3 uid="uid://6n6kdfmb6tnv"]
+
+[ext_resource type="Script" path="res://scripts/cenario.gd" id="1_dqokv"]
+[ext_resource type="PackedScene" uid="uid://c8bod3unoe7jm" path="res://cenas/piso_2.tscn" id="2_auj6k"]
+[ext_resource type="Texture2D" uid="uid://b3r2lbtws1hy4" path="res://sprites/pixil-frame-0 (3).png" id="3_5wnic"]
+[ext_resource type="PackedScene" uid="uid://dxibnjh86ion0" path="res://cenas/piso.tscn" id="4_i1alp"]
+[ext_resource type="PackedScene" uid="uid://du535tmhg4am8" path="res://cenas/bolinha.tscn" id="5_35ob7"]
+[ext_resource type="PackedScene" uid="uid://bdvl7kt4jvo2o" path="res://cenas/tree.tscn" id="5_864wv"]
+[ext_resource type="PackedScene" uid="uid://dym13wt7srvse" path="res://cenas/bloco_grande.tscn" id="6_jbayl"]
+[ext_resource type="PackedScene" uid="uid://ckgkggd8plexc" path="res://cenas/muro.tscn" id="7_lbu8i"]
+[ext_resource type="PackedScene" uid="uid://cx5n8hksf2q72" path="res://cenas/inimigo.tscn" id="7_xmfie"]
+[ext_resource type="PackedScene" uid="uid://duqjkfsaikd6y" path="res://cenas/lago_de_lava.tscn" id="8_7gtun"]
+[ext_resource type="PackedScene" uid="uid://cn04mppli4cgc" path="res://cenas/terra.tscn" id="11_uw8qy"]
+
+[node name="cenario" type="Node2D"]
+script = ExtResource("1_dqokv")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(22455, -35130)
+scale = Vector2(1000, 1000)
+texture = ExtResource("3_5wnic")
+
+[node name="piso_principal" type="Node2D" parent="."]
+
+[node name="bloco_grande" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(0, 400)
+
+[node name="piso" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(134, 307)
+
+[node name="bloco_grande2" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(-1920, 400)
+
+[node name="piso2" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(-1786, 307)
+
+[node name="bloco_grande3" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(-3840, 400)
+
+[node name="piso3" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(-3706, 307)
+
+[node name="bloco_grande4" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(-5760, 400)
+
+[node name="piso4" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(-5626, 307)
+
+[node name="bloco_grande5" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(7680, 400)
+
+[node name="piso5" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(7814, 307)
+
+[node name="bloco_grande6" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(5760, 400)
+
+[node name="piso6" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(5894, 307)
+
+[node name="bloco_grande7" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(3840, 400)
+
+[node name="piso7" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(3974, 307)
+
+[node name="bloco_grande8" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(1920, 400)
+
+[node name="piso8" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(2054, 307)
+
+[node name="bloco_grande9" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(15360, 400)
+
+[node name="piso9" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(15494, 307)
+
+[node name="bloco_grande10" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(13440, 400)
+
+[node name="piso10" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(13574, 307)
+
+[node name="bloco_grande11" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(11520, 400)
+
+[node name="piso11" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(11654, 307)
+
+[node name="bloco_grande12" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(9600, 400)
+
+[node name="piso12" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(9734, 307)
+
+[node name="bloco_grande13" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(23040, 400)
+
+[node name="piso13" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(23174, 307)
+
+[node name="bloco_grande14" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(21120, 400)
+
+[node name="piso14" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(21254, 307)
+
+[node name="bloco_grande15" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(19200, 400)
+
+[node name="piso15" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(19334, 307)
+
+[node name="bloco_grande16" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(17280, 400)
+
+[node name="piso16" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(17414, 307)
+
+[node name="bloco_grande17" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(30720, 400)
+
+[node name="piso17" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(30854, 307)
+
+[node name="bloco_grande18" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(28800, 400)
+
+[node name="piso18" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(28934, 307)
+
+[node name="bloco_grande19" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(26880, 400)
+
+[node name="piso19" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(27014, 307)
+
+[node name="bloco_grande20" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(24960, 400)
+
+[node name="piso20" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(25094, 307)
+
+[node name="bloco_grande21" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(38400, 400)
+
+[node name="piso21" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(38534, 307)
+
+[node name="bloco_grande22" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(36480, 400)
+
+[node name="piso22" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(36614, 307)
+
+[node name="bloco_grande23" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(34560, 400)
+
+[node name="piso23" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(34694, 307)
+
+[node name="bloco_grande24" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(32640, 400)
+
+[node name="piso24" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(32774, 307)
+
+[node name="bloco_grande25" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(46080, 400)
+
+[node name="piso25" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(46214, 307)
+
+[node name="bloco_grande26" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(44160, 400)
+
+[node name="piso26" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(44294, 307)
+
+[node name="bloco_grande27" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(42240, 400)
+
+[node name="piso27" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(42374, 307)
+
+[node name="bloco_grande28" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(40320, 400)
+
+[node name="piso28" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(40454, 307)
+
+[node name="bloco_grande29" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(53760, 400)
+
+[node name="piso29" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(53894, 307)
+
+[node name="bloco_grande30" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(51840, 400)
+
+[node name="piso30" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(51974, 307)
+
+[node name="bloco_grande31" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(49920, 400)
+
+[node name="piso31" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(50054, 307)
+
+[node name="bloco_grande32" parent="piso_principal" instance=ExtResource("6_jbayl")]
+position = Vector2(48000, 400)
+
+[node name="piso32" parent="piso_principal" instance=ExtResource("2_auj6k")]
+position = Vector2(48134, 307)
+
+[node name="bolinhas" type="Node2D" parent="."]
+
+[node name="bolinha" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(801, 33)
+
+[node name="bolinha2" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(4645, 19)
+
+[node name="bolinha3" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(15563, -3267)
+
+[node name="bolinha5" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-1545, -626)
+
+[node name="bolinha6" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-1960, -758)
+
+[node name="bolinha7" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-2207, 30)
+
+[node name="bolinha8" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(16999, -10687)
+
+[node name="bolinha9" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-1752, -773)
+
+[node name="bolinha11" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(1288, -1706)
+
+[node name="bolinha12" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(2271, -10190)
+
+[node name="bolinha13" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-3111, -651)
+
+[node name="bolinha14" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(8949, -2486)
+
+[node name="bolinha4" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(3678, -2095)
+
+[node name="bolinha10" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(17632, -14287)
+
+[node name="bolinha15" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(24995, -14251)
+
+[node name="bolinha16" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(29700, -14682)
+
+[node name="bolinha17" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(34442, -14394)
+
+[node name="bolinha18" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-458, -312)
+
+[node name="bolinha19" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(2458, -1500)
+
+[node name="bolinha20" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(5007, -2696)
+
+[node name="bolinha21" parent="bolinhas" instance=ExtResource("5_35ob7")]
+position = Vector2(-818, -1304)
+
+[node name="plataformas" type="Node2D" parent="."]
+
+[node name="lava" type="Node2D" parent="."]
+
+[node name="lago_de_lava" parent="lava" instance=ExtResource("8_7gtun")]
+position = Vector2(11331, -4930)
+
+[node name="lago_de_lava2" parent="lava" instance=ExtResource("8_7gtun")]
+position = Vector2(5746, -2160)
+
+[node name="trees" type="Node2D" parent="."]
+
+[node name="tree3" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(447, -415)
+
+[node name="tree4" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(3651, -418)
+
+[node name="tree5" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(1294, -10490)
+
+[node name="tree6" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(2666, -10491)
+
+[node name="tree7" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(2003, -10490)
+
+[node name="tree8" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(6036, -418)
+
+[node name="tree9" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(8060, -419)
+
+[node name="tree10" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(8864, -410)
+
+[node name="tree11" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(19670, -416)
+
+[node name="tree12" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(20477, -416)
+
+[node name="tree16" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(22866, -414)
+
+[node name="tree17" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(31152, -414)
+
+[node name="tree18" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(31962, -415)
+
+[node name="tree22" parent="trees" instance=ExtResource("5_864wv")]
+position = Vector2(34348, -415)
+
+[node name="muro" type="Node2D" parent="."]
+
+[node name="muro" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, 400)
+
+[node name="muro2" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -2384)
+
+[node name="muro5" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -5168)
+
+[node name="muro6" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -7952)
+
+[node name="muro3" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -10735)
+
+[node name="muro4" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -13519)
+
+[node name="muro7" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -16303)
+
+[node name="muro8" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(-7680, -19087)
+
+[node name="muro9" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, 400)
+
+[node name="muro10" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -2384)
+
+[node name="muro11" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -5168)
+
+[node name="muro12" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -7952)
+
+[node name="muro13" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -10735)
+
+[node name="muro14" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -13519)
+
+[node name="muro15" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -16303)
+
+[node name="muro16" parent="muro" instance=ExtResource("7_lbu8i")]
+position = Vector2(55680, -19087)
+
+[node name="blocos" type="Node2D" parent="."]
+
+[node name="piso" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-2090, -522)
+rotation = 0.322886
+
+[node name="piso2" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(3331, -1475)
+rotation = -0.469494
+
+[node name="piso3" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(306, -1306)
+
+[node name="piso4" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(8037, -1938)
+
+[node name="piso5" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(14710, -2737)
+
+[node name="piso9" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(19741, -5304)
+
+[node name="piso10" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(12620, -2314)
+
+[node name="piso11" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(10476, -1998)
+
+[node name="piso15" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(38888, -2268)
+
+[node name="piso16" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(22344, -2539)
+
+[node name="piso17" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(7519, -4836)
+
+[node name="piso18" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(12955, -4831)
+
+[node name="piso22" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(45.0001, -3739)
+rotation = -1.07687
+
+[node name="piso23" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-4928, -3379)
+
+[node name="piso24" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(3099, -4199)
+
+[node name="piso25" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(9439, -4836)
+
+[node name="piso26" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(22210, -6537)
+
+[node name="piso29" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(3596, -9564)
+rotation = 0.359538
+
+[node name="piso30" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-4155, -5919)
+rotation = 0.359538
+
+[node name="piso32" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(16039, -10650)
+rotation = 0.359538
+
+[node name="piso36" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(6493, -4930)
+
+[node name="piso37" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(5401, -4589)
+
+[node name="piso38" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(7155, -4898)
+
+[node name="piso39" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(21800, -5902)
+
+[node name="piso40" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(20069, -2151)
+
+[node name="piso41" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(20758, -7097)
+
+[node name="piso42" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(19115, -9009)
+
+[node name="piso43" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(19863, -7962)
+
+[node name="piso44" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(13993, -2564)
+
+[node name="piso45" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(13373, -2489)
+
+[node name="piso47" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(51026, -5523)
+
+[node name="piso57" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(15257, -13610)
+
+[node name="muro2" parent="blocos" instance=ExtResource("7_lbu8i")]
+position = Vector2(1046, -4800)
+
+[node name="muro3" parent="blocos" instance=ExtResource("7_lbu8i")]
+position = Vector2(1046, -7584)
+
+[node name="piso58" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(1180, -9767)
+
+[node name="piso59" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(19708, -13571)
+
+[node name="piso61" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(9212, -14147)
+rotation = 0.563741
+
+[node name="piso62" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(10888, -13103)
+rotation = 0.359538
+
+[node name="muro4" parent="blocos" instance=ExtResource("7_lbu8i")]
+position = Vector2(16496, -3338)
+
+[node name="muro5" parent="blocos" instance=ExtResource("7_lbu8i")]
+position = Vector2(1046, -7584)
+
+[node name="piso63" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(23448, -2463)
+
+[node name="piso64" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(21173, -2075)
+
+[node name="piso6" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-281, -1083)
+
+[node name="piso7" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(9, -1233)
+
+[node name="piso8" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-39, 29)
+
+[node name="piso12" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-576, -993)
+
+[node name="piso13" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-4133, -427)
+
+[node name="piso14" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-4748, 15)
+
+[node name="piso19" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-2760, -876)
+
+[node name="piso20" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-3047, -989)
+
+[node name="piso21" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-3417, -989)
+
+[node name="piso27" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-2518, -1374)
+
+[node name="piso28" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-2163, -1397)
+
+[node name="piso31" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-587, -3020)
+rotation = 0.827286
+
+[node name="piso33" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-888, -777)
+
+[node name="piso34" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-1166, -664)
+
+[node name="piso35" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-2814, -3285)
+
+[node name="piso46" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-2238, -5195)
+
+[node name="piso48" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-573, -5973)
+rotation = -0.897099
+
+[node name="piso49" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(-1471, -8719)
+rotation = 0.741765
+scale = Vector2(1, 1)
+
+[node name="piso50" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(40.0002, -8239)
+rotation = -1.07687
+
+[node name="piso51" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(5526, -2167)
+
+[node name="piso52" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(7360, -2175)
+
+[node name="piso53" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(13288, -11853)
+rotation = 0.359538
+
+[node name="piso54" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(16550, -13605)
+
+[node name="piso55" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(24572, -13445)
+
+[node name="piso56" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(28988, -13797)
+
+[node name="piso60" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(33372, -13701)
+
+[node name="piso65" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(1571, -240)
+rotation = -0.71733
+
+[node name="piso66" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(11264, -2072)
+
+[node name="piso67" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(12031, -2168)
+
+[node name="piso68" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-279, -4913)
+
+[node name="piso69" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-171, -4625)
+
+[node name="piso70" parent="blocos" instance=ExtResource("4_i1alp")]
+position = Vector2(-327, -3607)
+
+[node name="piso71" parent="blocos" instance=ExtResource("2_auj6k")]
+position = Vector2(16630, -5521)
+
+[node name="inimigos" type="Node2D" parent="."]
+position = Vector2(-34, -23)
+
+[node name="inimigo" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(5478, -102)
+
+[node name="inimigo2" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(4324, -66)
+
+[node name="inimigo6" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(9427, -5088)
+
+[node name="inimigo7" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(10266, -5197)
+
+[node name="inimigo3" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(-1658, -5715)
+
+[node name="inimigo4" parent="inimigos" instance=ExtResource("7_xmfie")]
+position = Vector2(-1262, -3794)
+
+[node name="terra" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(5526, -1944)
+
+[node name="terra2" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(5729, -1943)
+
+[node name="terra3" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(5970, -1943)
+
+[node name="terra4" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(6211, -1943)
+
+[node name="terra5" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(6454, -1943)
+
+[node name="terra6" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(6694, -1943)
+
+[node name="terra7" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(6936, -1943)
+
+[node name="terra8" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(7176, -1943)
+
+[node name="terra9" parent="." instance=ExtResource("11_uw8qy")]
+position = Vector2(7360, -1944)

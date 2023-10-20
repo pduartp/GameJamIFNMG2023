@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://who6umrttw8j"]
+
+[ext_resource type="Texture2D" uid="uid://d2wtlg063mn7h" path="res://sprites/formas/char-fotor-2023102003155.png" id="1_4cpt4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8td43"]
+radius = 20.0
+
+[node name="circle" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-7, -1)
+scale = Vector2(4, 4)
+texture = ExtResource("1_4cpt4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -3)
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8td43")

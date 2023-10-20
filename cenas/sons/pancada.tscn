@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbt3nnfdotmi2"]
+
+[ext_resource type="AudioStream" uid="uid://cx1oqvl6uw1yh" path="res://sounds/427701__efsdcnveoi__19-impacto.wav" id="1_a0bdl"]
+
+[node name="pancada" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_a0bdl")
+volume_db = 0.5

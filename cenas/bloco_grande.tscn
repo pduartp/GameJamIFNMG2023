@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://dym13wt7srvse"]
+
+[ext_resource type="PackedScene" uid="uid://cn04mppli4cgc" path="res://cenas/terra.tscn" id="1_sbm4g"]
+
+[node name="bloco_grande" type="Node2D"]
+
+[node name="terra2" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(126, 129)
+
+[node name="terra3" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(366, 129)
+
+[node name="terra4" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(606, 129)
+
+[node name="terra5" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(846, 129)
+
+[node name="terra6" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1086, 129)
+
+[node name="terra7" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1326, 129)
+
+[node name="terra8" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1566, 129)
+
+[node name="terra9" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1806, 129)
+
+[node name="terra10" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(126, 361)
+
+[node name="terra11" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(366, 361)
+
+[node name="terra12" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(606, 361)
+
+[node name="terra13" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(846, 361)
+
+[node name="terra14" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1086, 361)
+
+[node name="terra15" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1326, 361)
+
+[node name="terra16" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1566, 361)
+
+[node name="terra17" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1806, 361)
+
+[node name="terra18" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(126, 593)
+
+[node name="terra19" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(366, 593)
+
+[node name="terra20" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(606, 593)
+
+[node name="terra21" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(846, 593)
+
+[node name="terra22" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1086, 593)
+
+[node name="terra23" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1326, 593)
+
+[node name="terra24" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1566, 593)
+
+[node name="terra25" parent="." instance=ExtResource("1_sbm4g")]
+position = Vector2(1806, 593)

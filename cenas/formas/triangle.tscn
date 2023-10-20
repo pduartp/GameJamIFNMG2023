@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3woc04in8xsk"]
+
+[ext_resource type="Texture2D" uid="uid://brrvax8jg0wjb" path="res://sprites/formas/char-fotor-2023102002841.png" id="1_ic8gl"]
+
+[node name="triangle" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(20.5, -70.75)
+scale = Vector2(4, 3.365)
+texture = ExtResource("1_ic8gl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(3, -5)
+polygon = PackedVector2Array(10, -132, -70, 1, 89, 1)
