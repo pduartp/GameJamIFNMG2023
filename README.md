@@ -1,6 +1,6 @@
 # GameJamIFNMG2023 👾
 
-## Mini game que aborda as temática de evolução
+## Mini game que aborda a temática de evolução
 
 O projeto foi desenvolvido na Game Jam de 2023 do instituto federal pelos seguintes integrantes:
 
